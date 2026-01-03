@@ -27,9 +27,3 @@ pip install datasets sacrebleu matplotlib numpy torch torch-summary torchvision 
 - Điều chỉnh siêu tham số trong biến `hyperparameters` (d_model, num_heads, batch_size, num_epochs, max_len...).
 - Đổi tùy chọn suy luận `option` giữa `greedy` và `beam` trong hàm `translate`.
 - Thay đổi `beam_size` hoặc `no_repeat_ngram_size` để kiểm soát đa dạng câu dịch.
-
-## Ghi chú dữ liệu
-- Dataset: `Angelectronic/IWSLT15_English_Vietnamese` từ Hugging Face Datasets. Dữ liệu được tải và chia train/valid/test trực tiếp trong notebook.
-
-## Kết quả kỳ vọng
-- BLEU phụ thuộc vào seed, số epoch và tài nguyên; với thiết lập mặc định, BLEU thử nghiệm trên 200 mẫu được in ở cuối notebook.
